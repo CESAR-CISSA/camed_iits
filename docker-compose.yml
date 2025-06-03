@@ -1,4 +1,4 @@
-version: '3'
+#version: '3'
 
 services:
   # Broker MQTT (Eclipse Mosquitto)
@@ -19,7 +19,7 @@ services:
   # Simulador de ataques
   simulator:
     build: .
-    container_name: iits
+    container_name: mqtt
     depends_on:
       - mosquitto
     networks:
@@ -37,7 +37,7 @@ services:
 
   # MQTT Explorer (interface web para visualização)
   mqtt-explorer:
-    image: smeagolworms4/iits-explorer
+    image: smeagolworms4/mqtt-explorer
     container_name: mqtt-explorer
     ports:
       - "4000:4000"

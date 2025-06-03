@@ -217,4 +217,8 @@ pip-selfcheck.json
 .history
 .ionide
 
+### Mosquitto ###
+mosquitto/data/mosquitto.db
+mosquitto/log/mosquitto.log
+
 # End of https://www.toptal.com/developers/gitignore/api/python,venv,linux,visualstudiocode
